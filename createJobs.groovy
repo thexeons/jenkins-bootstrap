@@ -6,3 +6,18 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+
+pipelineJob('mypartner-job') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/thexeons/jenkins-bootstrap.git'
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}
