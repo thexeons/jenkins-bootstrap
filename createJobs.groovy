@@ -13,7 +13,7 @@ pipelineJob('mypartner-job') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/thexeons/jenkins-bootstrap.git'
+                        url 'https://github.com/thexeons/mypartner.git'
                     }
                     branch 'master'
                 }
